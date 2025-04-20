@@ -168,13 +168,29 @@
   <!-- Other header content like navigation -->
 </header>
 
-<style>
-  .logo {
-    height: 60px; /* Adjust size as needed */
-    position: absolute;
-    top: 10px;
-    left: 10px;
-  }
+  <style>
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1, h2, p {
+      text-align: center;
+    }
+  </style>
+  <style>
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      height: 60px; /* Adjust as needed */
+    }
+    header {
+      position: relative;
+      height: 80px; /* Adjust to accommodate the logo */
+    }
+  </style>
+
 
   header {
     position: relative;
@@ -182,5 +198,4 @@
     height: 80px;
     display: flex;
     align-items: center;
-  }
-</style>
+  

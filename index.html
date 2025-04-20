@@ -1,41 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gabbage Movers</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gabbage Collection & Movers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; }
-    header { background: #28a745; color: white; padding: 1rem; text-align: center; }
-    main { padding: 2rem; }
-    section { margin-bottom: 2rem; }
-    footer { background: #333; color: white; text-align: center; padding: 1rem; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #f0f2f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #28a745;
+      padding: 1.5rem;
+      text-align: center;
+      color: white;
+    }
+
+    nav {
+      background: #222;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1598899134739-90f6d1fcd1f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #28a745;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "✓ ";
+      color: #28a745;
+    }
+
+    .contact {
+      background-color: #e9ecef;
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .whatsapp-button {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .whatsapp-button:hover {
+      background: #1ebe5d;
+    }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Gabbage Collection & Movers</h1>
     <p>Reliable. Affordable. Clean.</p>
   </header>
-  <main>
-    <section>
-      <h2>Our Services</h2>
-      <ul>
-        <li>Residential & commercial garbage collection</li>
-        <li>House and office moving services</li>
-        <li>Recycling support</li>
-        <li>Scheduled pickups & emergency cleanups</li>
-      </ul>
-    </section>
-    <section>
-      <h2>Contact Us</h2>
-      <p>📞 Phone: 0712 345 678</p>
-      <p>📧 Email: info@gabbagemovers.co.ke</p>
-      <p>📍 Nairobi, Kenya</p>
-    </section>
-  </main>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h2>We Take the Trash and the Stress Away</h2>
+    <p>Fast, friendly garbage collection and moving services across Nairobi.</p>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>🗑️ Weekly and scheduled garbage pickups</li>
+      <li>🚛 House and office moving</li>
+      <li>♻️ Recycling and environmental support</li>
+      <li>📦 Packing and loading help</li>
+      <li>🧹 Emergency cleanup services</li>
+    </ul>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: 0712 345 678</p>
+    <p>📧 Email: info@gabbagemovers.co.ke</p>
+    <p>📍 Location: Nairobi, Kenya</p>
+    <a class="whatsapp-button" href="https://wa.me/254712345678" target="_blank">Chat on WhatsApp</a>
+  </section>
+
   <footer>
-    &copy; 2025 Gabbage Collection & Movers
+    &copy; 2025 Gabbage Collection & Movers | Nairobi, Kenya
   </footer>
+
 </body>
 </html>

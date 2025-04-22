@@ -2,56 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>EDOTA Garbage Collection & Movers</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #fefefe;
     }
-    <header>
-  <img src="logo.png" alt="EDOTA Logo" style="height: 120px; margin-right: 20px;" />
 
-  <div>
-    <h1 style="margin: 0; font-size: 2.5rem; font-weight: bold;">EDOTA GARBAGE COLLECTION AND MOVERS SERVICES</h1>
-
-    <p style="font-size: 1rem; margin: 5px 0 0;">Reliable Waste Management & Transport Solutions</p>
-  </div>
-</header>
-
+    header {
+      background-color: #004225;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 20px;
     }
+
+    header img {
+      height: 70px;
+      margin-right: 20px;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 1rem;
+      color: #b6e2cd;
+    }
+
     main {
       padding: 20px;
     }
+
     section {
-      margin-bottom: 40px;
-    }
-    h1, h2 {
-      color: #006400;
-    }
-    footer {
-      background-color: #f1f1f1;
+      border-radius: 10px;
       padding: 20px;
-      text-align: center;
+      margin-bottom: 20px;
     }
+
+    section h2 {
+      margin-top: 0;
+    }
+
+    .services { background-color: #eafbea; }
+    .pricing { background-color: #fff3cd; }
+    .location { background-color: #e0f7ff; }
+    .contact { background-color: #ffe0e0; }
+
+    footer {
+      background-color: #004225;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
     a {
-      color: #006400;
+      color: #004225;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <header style="display: flex; align-items: center; padding: 10px 20px;">
-  <img src="logo.png" alt="EDOTA Logo" style="height: 60px; margin-right: 20px;" />
-  <div>
-    <h1 style="margin: 0; font-size: 2rem; font-weight: bold;">EDOTA GARBAGE COLLECTION AND MOVERS SERVICES</h1>
-    <p style="font-size: 1rem; margin: 5px 0 0;">Reliable Waste Management & Transport Solutions</p>
-  </div>
-</header>
 
+  <header>
+    <img src="logo.png" alt="EDOTA Logo" />
+    <div>
+      <h1>EDOTA GARBAGE COLLECTION AND MOVERS SERVICES</h1>
+      <p>Reliable Waste Management & Transport Solutions</p>
+    </div>
+  </header>
 
   <main>
-    <section>
+    <section class="services">
       <h2>Our Services</h2>
       <ul>
         <li>Household waste collection</li>
@@ -64,16 +97,12 @@
       </ul>
     </section>
 
-    <section>
+    <section class="pricing">
       <h2>Pricing</h2>
-      <p><strong>Garbage Collection:</strong> KES 350 per household/month</
-        <section>
-  <h2>Contact Us</h2>
-  <div style="background-color: #f0f0f0; padding: 20px; border-radius: 10px;">
-    <p><strong>📍 Location:</strong> Kenyaree, Kisumu, Kenya</p>
-    <p><strong>📞 Phone:</strong> <a href="tel:+254714670083">0714 670083</a></p>
-    <p><strong>📧 Email:</strong> <a href="mailto:tomdolo21@gmail.com">tomdolo21@gmail.com</a></p>
-    <p><strong>💬 WhatsApp:</strong> <a href="https://wa.me/254714670083" target="_blank">Chat with us on WhatsApp</a></p>
-  </div>
-</section>
+      <p><strong>Garbage Collection:</strong> KES 350 per household/month</p>
+      <p><strong>Moving Services:</strong> Pricing depends on distance and load</p>
+    </section>
 
+    <section class="location">
+      <h2>Location</h2>
+      <p>We are based in Kenyaree, Kisumu, Kenya.

@@ -12,7 +12,6 @@
       background-color: #f9f9f9;
     }
 
-    /* Header */
     header {
       background-color: #004225;
       color: white;
@@ -34,7 +33,6 @@
       color: #dcdcdc;
     }
 
-    /* Navigation */
     nav {
       background-color: #e0f7ff;
       padding: 10px;
@@ -50,7 +48,6 @@
       text-decoration: underline;
     }
 
-    /* Main content */
     main {
       padding: 20px;
     }
@@ -63,7 +60,6 @@
       color: #004225;
     }
 
-    /* Footer */
     footer {
       background-color: #004225;
       color: white;
@@ -79,7 +75,6 @@
       text-decoration: underline;
     }
 
-    /* Blog Preview */
     .blog-preview {
       background-color: #f3f3f3;
       padding: 20px;
@@ -95,7 +90,6 @@
 </head>
 <body>
 
-  <!-- Header -->
   <header>
     <img src="logo.png" alt="EDOTA Logo" />
     <div>
@@ -104,16 +98,15 @@
     </div>
   </header>
 
-  <!-- Navigation -->
   <nav>
     <a href="#services">Our Services</a>
     <a href="#pricing">Pricing</a>
     <a href="#location">Location</a>
     <a href="#contact">Contact Us</a>
+    <a href="#schedule">Schedule Pickup</a>
     <a href="/blog.html">Blog</a>
   </nav>
 
-  <!-- Main Content -->
   <main>
     <section id="services" style="background-color: #eafbea;">
       <h2>Our Services</h2>
@@ -145,12 +138,30 @@
       <p><strong>📞 Phone:</strong> <a href="tel:+254714670083">0714 670083</a></p>
       <p><strong>📧 Email:</strong> <a href="mailto:tomndolo21@gmail.com">tomndolo21@gmail.com</a></p>
       <p><strong>💬 WhatsApp:</strong> 
-  <a href="https://wa.me/254714670083" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; height: 20px; margin-right: 8px;">
-    Chat with us on WhatsApp
-  </a>
-</p>
+        <a href="https://wa.me/254714670083" target="_blank" style="text-decoration: none; display: inline-flex; align-items: center;">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; height: 20px; margin-right: 8px;">
+          Chat with us on WhatsApp
+        </a>
+      </p>
+    </section>
 
+    <section id="schedule" style="background-color: #eafbea;">
+      <h2>Schedule a Pickup</h2>
+      <form action="https://formspree.io/f/yourFormID" method="POST" style="display: flex; flex-direction: column; max-width: 400px;">
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" required style="margin-bottom: 10px; padding: 8px;" />
+
+        <label for="location">Pickup Location:</label>
+        <input type="text" name="location" required style="margin-bottom: 10px; padding: 8px;" />
+
+        <label for="message">Message:</label>
+        <textarea name="message" rows="4" required style="margin-bottom: 10px; padding: 8px;"></textarea>
+
+        <button type="submit" style="background-color: #004225; color: white; padding: 10px; border: none; cursor: pointer;">
+          Submit Request
+        </button>
+      </form>
+    </section>
 
     <section class="blog-preview">
       <h2>From Our Blog</h2>
@@ -163,7 +174,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
     &copy; 2025 EDOTA Garbage Collection & Movers. All rights reserved.
   </footer>

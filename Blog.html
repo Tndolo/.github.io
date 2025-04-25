@@ -1,0 +1,49 @@
+---
+layout: default
+title: Blog
+---
+
+<style>
+  .blog-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .blog-post {
+    background-color: #f3f3f3;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .blog-post h2 {
+    color: #004225;
+    margin-top: 0;
+  }
+
+  .blog-post a {
+    color: #004225;
+    text-decoration: none;
+  }
+
+  .blog-post a:hover {
+    text-decoration: underline;
+  }
+
+  .blog-post small {
+    color: #666;
+  }
+</style>
+
+<div class="blog-container">
+  <h1>Our Blog</h1>
+
+  {% for post in site.posts %}
+    <div class="blog-post">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <small>{{ post.date | date: "%B %d, %Y" }}</small>
+      <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      <a href="{{ post.url }}">Read More</a>
+    </div>
+  {% endfor %}
+</div>

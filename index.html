@@ -34,6 +34,22 @@
       color: #dcdcdc;
     }
 
+    /* Navigation */
+    nav {
+      background-color: #e0f7ff;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #004225;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     /* Main content */
     main {
       padding: 20px;
@@ -62,6 +78,19 @@
     a:hover {
       text-decoration: underline;
     }
+
+    /* Blog Preview */
+    .blog-preview {
+      background-color: #f3f3f3;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .blog-preview h3 {
+      margin-top: 0;
+    }
+    .blog-preview small {
+      color: #666;
+    }
   </style>
 </head>
 <body>
@@ -75,9 +104,18 @@
     </div>
   </header>
 
+  <!-- Navigation -->
+  <nav>
+    <a href="#services">Our Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#location">Location</a>
+    <a href="#contact">Contact Us</a>
+    <a href="/blog">Blog</a>
+  </nav>
+
   <!-- Main Content -->
   <main>
-    <section style="background-color: #eafbea;">
+    <section id="services" style="background-color: #eafbea;">
       <h2>Our Services</h2>
       <ul>
         <li>Household waste collection</li>
@@ -90,23 +128,33 @@
       </ul>
     </section>
 
-    <section style="background-color: #fff3cd;">
+    <section id="pricing" style="background-color: #fff3cd;">
       <h2>Pricing</h2>
       <p><strong>Garbage Collection:</strong> KES 350 per household/month</p>
       <p><strong>Moving Services:</strong> Cost depends on distance and load</p>
     </section>
 
-    <section style="background-color: #e0f7ff;">
+    <section id="location" style="background-color: #e0f7ff;">
       <h2>Location</h2>
-      <p>Kenyaree, Kisumu, Kenya</p>
+      <p>Kenyare, Kisumu, Kenya</p>
     </section>
 
-    <section style="background-color: #ffe0e0;">
+    <section id="contact" style="background-color: #ffe0e0;">
       <h2>Contact Us</h2>
       <p><strong>📍 Location:</strong> Kenyare, Kisumu - Kenya</p>
       <p><strong>📞 Phone:</strong> <a href="tel:+254714670083">0714 670083</a></p>
       <p><strong>📧 Email:</strong> <a href="mailto:tomndolo21@gmail.com">tomndolo21@gmail.com</a></p>
       <p><strong>💬 WhatsApp:</strong> <a href="https://wa.me/254714670083" target="_blank">Chat with us on WhatsApp</a></p>
+    </section>
+
+    <section class="blog-preview">
+      <h2>From Our Blog</h2>
+      <div>
+        <h3><a href="/blog">Welcome to Our Blog</a></h3>
+        <small>April 25, 2025</small>
+        <p>We’re excited to launch our new blog! Here we’ll share updates about our garbage collection and moving services...</p>
+        <a href="/blog">Read More</a>
+      </div>
     </section>
   </main>
 
@@ -114,5 +162,6 @@
   <footer>
     &copy; 2025 EDOTA Garbage Collection & Movers. All rights reserved.
   </footer>
+
 </body>
 </html>
